@@ -9,10 +9,17 @@ export default function StudentProfile(){
   const { loading, error, data: student } = useAsync(()=> fetchStudent(id), [id])
 
   return (
-    <div>
-      <h2>Student Profile</h2>
+    <section className="page">
+      <div className="page-header">
+        <div>
+          <p className="page-subtitle">Review the student profile details in a clean, modern layout.</p>
+          <h2>Student Profile</h2>
+        </div>
+      </div>
+
       {loading && <Spinner />}
       {error && <div className="error">Failed to load profile, showing mock data.</div>}
+
       {student ? (
         <div className="profile">
           <h3>{student.name}</h3>
@@ -21,8 +28,8 @@ export default function StudentProfile(){
           <div><strong>Email:</strong> {student.email}</div>
         </div>
       ) : (
-        !loading && <div>No student found.</div>
+        !loading && <div className="empty-state">No student found.</div>
       )}
-    </div>
+    </section>
   )
 }
