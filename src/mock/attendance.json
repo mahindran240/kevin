@@ -1,0 +1,5 @@
+[
+  {"studentId": 1, "present": 18, "absent": 2},
+  {"studentId": 2, "present": 16, "absent": 4},
+  {"studentId": 3, "present": 19, "absent": 1}
+]

@@ -1,0 +1,5 @@
+[
+  {"id": 1, "name": "Alice Johnson", "age": 20, "major": "Biology", "email": "alice@example.com"},
+  {"id": 2, "name": "Bob Smith", "age": 22, "major": "Computer Science", "email": "bob@example.com"},
+  {"id": 3, "name": "Carol Lee", "age": 21, "major": "Mathematics", "email": "carol@example.com"}
+]
